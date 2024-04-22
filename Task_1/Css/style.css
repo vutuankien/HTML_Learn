@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+
+header {
+  padding: 10px 20px;
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 1.4rem;
+}
+header .header-list {
+  display: flex;
+  gap: 30px;
+}
+header .header-list .header-items {
+  list-style: none;
+  font-weight: 700;
+  padding: 5px 10px;
+  position: relative;
+}
+header .header-list .header-items:hover .header-items--list {
+  display: block;
+}
+header .header-list .header-items .header-items--list {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  background-color: #000;
+  right: 0;
+  list-style: none;
+  text-align: right;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+  display: none;
+  transition: 0.3s ease-in;
+}
+header .header-list .header-items .header-items--list li {
+  padding: 10px 30px;
+}
+header .header-list .header-items .header-items--list li:hover {
+  background-color: #ccc;
+  transition: 0.2s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */
