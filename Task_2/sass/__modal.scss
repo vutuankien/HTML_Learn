@@ -1,0 +1,99 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0, 0, 0, 0.2);
+        // display: flex;
+    }
+    .login{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 500px;
+        height: auto;
+        position: relative;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 3px #000;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        .login-header{
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 20px 10px;
+            font-weight: 100;
+        }
+        .main-form{
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 1rem;
+                padding: 1rem 1.2rem;
+                font-size: 1.2rem;
+                outline: none;
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                color:#000;
+                font-weight: 400;
+                &:focus{
+                    outline: 1px solid #000;
+                }
+            }
+            .main-form-subform{
+                display: flex;
+                justify-content: end;
+                gap: 0.8rem;
+                button{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    a{
+                        font-size: 0.95rem;
+                        color:#2180c8;
+                        &:hover{
+                            color: #4a9cda;
+                        }
+                    }
+                    .not-decorate{
+                        color:#000;
+                        text-decoration: none;
+                        &:hover{
+                            color: #636262;
+                        }
+                    }
+                
+                }
+            }
+            .button-group{
+                display: flex;
+                margin: auto;
+                button{
+                    border-radius: 1rem;
+                    color:#ffffff;
+                    background-color: #2180c8;
+                    outline: none;
+                    border: none;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    width: 100%;
+                    padding: 0.5rem 1rem;
+                    margin: 1.5rem;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #3d9ae1;
+                    }
+                }
+            }
+        }
+    }
+}
