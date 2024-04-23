@@ -1,12 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     cursor: pointer;
 }
-header{
+header {
     padding: 10px 20px;
     width: 100%;
     height: 70px;
@@ -14,21 +14,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo{
+    .logo {
         font-size: 1.4rem;
     }
-    .header-list{
+    .header-list {
         display: flex;
         gap: 30px;
-        .header-items{
+        .header-items {
             list-style: none;
             font-weight: 700;
             padding: 5px 10px;
             position: relative;
-            &:hover .header-items--list{
+            &:hover .header-items--list {
                 display: block;
+                transition: 0.2s ease-in-out;
             }
-            .header-items--list{
+            .header-items--list {
                 position: absolute;
                 width: 150px;
                 height: auto;
@@ -36,15 +37,46 @@ header{
                 right: 0;
                 list-style: none;
                 text-align: right;
-                border-radius:0  0 1rem 1rem;
-                overflow: hidden;
                 display: none;
                 transition: 0.3s ease-in;
-                li{
+                .header-items--subnav {
                     padding: 10px 30px;
-                    &:hover{
+                    &:hover {
                         background-color: #ccc;
+                        color: #000;
                         transition: 0.2s ease-in;
+                    }
+                    &:hover .subheader-list {
+                        display: block;
+                    }
+                    .subheader-list {
+                        position: absolute;
+                        right: 150px;
+                        list-style: none;
+                        height: auto;
+                        width: auto;
+                        background-color: rgb(0, 0, 0);
+                        z-index: 2;
+                        display: none;
+                        .subheader-items {
+                            padding: 10px 40px;
+                            text-wrap: nowrap;
+                            text-align: right;
+                            font-size: 0.9rem;
+                            &:hover {
+                                background-color: #ccc;
+                                color: #000;
+                                transition: 0.3s ease-in-out;
+                            }
+                            &::after{
+                                content: "";
+                                width: 200px;
+                                height: 20px;
+                                position: absolute;
+                                top:-20px;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }
