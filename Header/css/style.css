@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #ccc;
+  color: black;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+header .logo h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header .header-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .header-list .header-list--item {
+  position: relative;
+}
+
+header .header-list .header-list--item a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+header .header-list .header-list--item a:hover {
+  color: #636262;
+}
+
+header .header-list .header-list--item .subnav {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+  right: 10px;
+  top: 35px;
+  text-align: right;
+  cursor: pointer;
+  display: none;
+}
+
+header .header-list .header-list--item .subnav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 150px;
+  right: 0;
+  top: -10px;
+  height: 20px;
+}
+
+header .header-list .header-list--item .subnav .subnav-items {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+header .header-list .header-list--item .subnav .subnav-items:hover {
+  background-color: #ccc;
+  color: #000000;
+  transition: 0.4s ease-in-out;
+}
+
+header .header-list .header-list--item:hover .subnav {
+  transition: 0.3s ease-in-out;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
