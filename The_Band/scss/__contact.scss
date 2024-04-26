@@ -1,0 +1,81 @@
+#contact{
+    width: 100%;
+    height: auto;
+    // background-color: $primary_background;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+        // color: $primary-color;
+        .contact-content-heading{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            // margin: 20px auto;
+            text-transform: uppercase;
+        }
+        .contact-content-des{
+            font-size: 1.3rem;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 4px;
+            margin: 20px auto;
+            color: #ccc;
+        }
+    }
+    .contact-infor{
+        // margin: 50px 0;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+        // gap: 50px;
+        .contact-infor--text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .contact-infor-text--icon{
+                font-size: 2rem;
+            }
+        }
+        .contact-infor-form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .contact-infor-form--firstline .form-input-text{
+                padding: 10px  30px 10px 10px;
+                font-size: 1.5rem;
+            }
+            .contact-infor-form--secondline .form-input-text{
+                padding: 10px  30px 10px 10px;
+                font-size: 1.5rem;
+                width: 100%;
+            }
+            .form-btn-group{
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                .btn-send{
+                    padding: 10px 25px;
+                    font-size: 2rem;
+                    color: $primary-color;
+                    background-color: $primary_background;
+                    border: none;
+                    &:hover{
+                        background-color: #ccc;
+                        color: $primary_background;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}

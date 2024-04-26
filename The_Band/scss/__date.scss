@@ -1,0 +1,128 @@
+#dates {
+    margin: 70px 0;
+    width: 100%;
+    height: auto;
+    background-color: $primary_background;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .date-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $primary-color;
+        .date-content-heading {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+        .date-content-des {
+            font-size: 1.3rem;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 4px;
+            margin: 20px auto;
+            color: #ccc;
+        }
+    }
+    .date-book {
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        height: auto;
+        display: flex;
+        // list-style: none;
+        margin: 20px auto;
+        flex-direction: column;
+        border-radius: 0.4rem;
+        .date-book--items {
+            list-style: none;
+            padding: 20px 20px;
+            font-size: 1.5rem;
+            color: #575656;
+            border: 1px solid #ccc;
+            &:nth-child(1),
+            &:nth-child(2) {
+                span {
+                    background-color: red;
+                    padding: 5px 10px;
+                    margin: 0 5px;
+                    color: #fff;
+                }
+            }
+            &:last-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    background-color: $primary_background;
+                    color: $primary-color;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .date-card {
+        padding: 40px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .date-card-items {
+            background-color: rgb(255, 255, 255);
+            width: 245px;
+            height: 400px;
+            img {
+                width: 245px;
+                height: 182px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+            .date-card-content{
+                padding:0 15px;
+                display: flex;
+                flex-direction: column;
+                // gap: 10px;
+                font-size: 1.3rem;
+                .date-card-infor{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: $primary_background;
+                    padding: 15px 0;
+                }
+                .date-card-time{
+                    font-size: 1.5rem;
+                    color: #ccc;
+                    padding: 10px 0;
+                }
+                .date-card-des{
+                    line-height: 1.3;
+                    padding: 10px 0;
+                }
+                .date-card-btn-group{
+                    display: flex;
+                    justify-content: start;
+                    padding: 10px 0;
+                    // margin-bottom: 10px;
+                    .date-card-btn{
+                        padding: 8px 16px;
+                        text-transform: capitalize;
+                        outline: none;
+                        border: none;
+                        background-color: $primary_background;
+                        color: $primary-color;
+                        &:hover{
+                            background-color: #ccc;
+                            color: $primary_background;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
