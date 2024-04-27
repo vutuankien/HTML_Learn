@@ -96,7 +96,7 @@ header .logo-search:hover {
   margin-bottom: 50px;
   width: 100%;
   padding-top: 50%;
-  background: url("../assets/image/la.jpg") top center/cover no-repeat;
+  background: url("../image/la.jpg") top center/cover no-repeat;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -368,7 +368,7 @@ header .logo-search:hover {
   margin-bottom: 50px;
   width: 100%;
   padding-top: 50%;
-  background: url("../assets/image/map.jpg") top center/cover no-repeat;
+  background: url("../image/map.jpg") top center/cover no-repeat;
 }
 
 footer {
