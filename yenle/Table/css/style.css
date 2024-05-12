@@ -1,57 +1,64 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container {
     width: 100%;
-     height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
- }
- 
- .header {
-     background-color: cadetblue;
-     height: 50px;
-     width: 815px;
-     border: 1px solid cadetblue;
- }
- 
- .content {
-     height: 150px;
-     width: 815px; /* Set the width to 815px */
-     border: 1px solid cadetblue;
-     overflow: auto;
-     margin: 0 auto; /* Center the table horizontally */
- }
- 
- table {
-     width: 100%; /* Use the full width of the content div */
-     table-layout: fixed;
-     margin:auto;
- }
- 
- th {
-     color: aliceblue;
-     padding: 20px 15px;
-     text-align: left;
-     font-weight: 500;
-     font-size: 12px;
-     text-transform: uppercase;
- }
- 
- td {
-     color: rgb(7, 135, 247);
-     padding: 15px;
-     text-align: left;
-     vertical-align: middle;
-     font-weight: 300;
- }
- 
- ::-webkit-scrollbar {
-     width: 6px;
- }
- 
- ::-webkit-scrollbar-track,
- ::-webkit-scrollbar-thumb {
-     background: transparent;
-     box-shadow: inset 0 0 6px rgb(98, 189, 194);
- }
- 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+.header {
+    background-color: cadetblue;
+    height: 50px;
+    width: 815px;
+    border: 1px solid cadetblue;
+}
+
+.content {
+    height: 150px;
+    width: 815px;
+    border: 1px solid cadetblue;
+    overflow: auto;
+    margin: 0 auto;
+    /* transform: translateX(20px); */
+
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: auto;
+}
+
+th {
+    color: aliceblue;
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+td {
+    color: rgb(7, 135, 247);
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: inset 0 0 6px rgb(98, 189, 194);
+}
