@@ -1,0 +1,15 @@
+--tạo 1 nhánh  mới với tên nhánh là tên mình
+    vd: yenle,thuhuyen...
+-trong nhánh đấy có 1 folder mang tên mình 
+    vd: folder yenle,thuhuyen
+- bên trong folder có các folder con như task_1,task_2,header,...
+-làm đc bài nào thì tạo folder có tên đấy rồi bên trong code j thì code
+- xem đề bài ở nhánh develop chọn bài cần xem mở index.html rồi xem 
+-nhiệm vụ là clone lại y hệt đề bài
+--sau khi làm xong ở nhánh [tên mình] thì push code và tạo request với nhánh homework
+-cấm ko push lên nhánh develop
+--
+
+--
+vì đang ở quê nên mình chỉ giải đáp từ 9h đến 10h đêm thôi nhé:)))
+nào lên hà nội thì là 9h tới 2h sáng :D
