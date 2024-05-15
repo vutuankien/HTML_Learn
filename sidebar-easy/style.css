@@ -11,11 +11,7 @@
   
   .sidebar {
     width: 300px;
-<<<<<<< HEAD
     height: 100vh;
-=======
-    height: 150vh;
->>>>>>> 8254acc201e3f5a222877ba2c2407b435cc7a157
     background-color: rgb(17, 17, 29);
     display: flex;
     flex-direction: column;
