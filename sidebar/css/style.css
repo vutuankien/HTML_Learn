@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(17, 17, 29);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.sidebar .logo h1 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.sidebar .sidebar-search {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+.sidebar .sidebar-search .text-input {
+  padding: 10px 30px 10px 5px;
+  outline: none;
+  border: none;
+  border-radius: 0.7rem;
+}
+.sidebar .sidebar-search .text-input::placeholder {
+  color: #000;
+}
+.sidebar .sidebar-search .btn-input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 1rem;
+  font-weight: 600;
+  background-color: rgb(19, 19, 171);
+  color: #fff;
+}
+.sidebar .sidebar-search .btn-input:hover {
+  background-color: rgb(42, 42, 177);
+  color: rgb(255, 255, 255);
+}
+.sidebar .sidebar-content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .sidebar-content .sidebar-items {
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .sidebar-content .sidebar-items:hover {
+  background-color: #353535;
+  color: #fff;
+  transition: 0.3s;
+}
+.sidebar .sidebar-content .sidebar-items h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.sidebar .sidebar-content .sidebar-items i {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.sidebar .logout {
+  width: 100%;
+  display: flex;
+  margin: 0 0 20px 20px;
+  align-items: center;
+}
+.sidebar .logout button {
+  padding: 10px 20px;
+  background-color: rgb(19, 19, 171);
+  color: #fff;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+.sidebar .logout button:hover {
+  background-color: rgb(39, 39, 192);
+  color: #fff;
+}
+.sidebar .logout button i {
+  font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+}
+.sidebar .logout p {
+  margin-left: 10px;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.main-content {
+  position: absolute;
+  left: 300px;
+  height: 100vh;
+  background-color: rgb(32, 32, 57);
+  top: 0;
+  right: 0;
+}
+.main-content .main-cards {
+  margin: 100px 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .main-cards .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  margin-top: 50px;
+  width: 200px;
+  height: 130px;
+  background-color: rgb(17, 17, 29);
+}
+.main-content .main-cards .cards .cards-infor .card-numbers {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.main-content .main-cards .cards .cards-infor .card-des {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.main-content .main-cards .cards .card-icon i {
+  font-size: 4rem;
+  color: #fff;
+}
+.main-content .main-table {
+  margin: 30px 60px;
+  display: flex;
+  justify-content: center;
+}
+.main-content .main-table .table {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right, rgb(17, 17, 29), rgb(35, 48, 88));
+  padding: 20px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+}
+.main-content .main-table .table thead tr {
+  background-image: linear-gradient(to right, rgb(23, 23, 113), rgb(42, 71, 157));
+  padding: 30px 20px;
+  color: aliceblue;
+  font-size: 3rem;
+  text-align: left;
+}
+.main-content .main-table .table thead tr th {
+  padding: 10px;
+  text-align: left;
+}
+.main-content .main-table .table .table-col {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: left;
+  color: aliceblue;
+  font-weight: 600;
+  /* margin: 0 15px; */
+}
+.main-content .main-table .table tbody tr:hover {
+  background-color: rgb(17, 17, 29);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

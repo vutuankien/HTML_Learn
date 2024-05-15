@@ -1,0 +1,113 @@
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(17,17,29);
+    display: flex;
+    flex-direction: column;
+    // justify-content: stretch;
+    gap: 30px;
+    .logo{
+        display: flex;
+        justify-content: center ;
+        padding: 30px;
+        h1{
+            font-size: 5.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+    }
+    .sidebar-search{
+
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        .text-input{
+            padding: 10px 30px 10px 5px;
+            outline: none;
+            border: none;
+            border-radius: 0.7rem;
+            &::placeholder{
+                color: #000;
+            }
+        }
+        .btn-input{
+            outline: none;
+            border: none;
+            padding: 5px 10px;
+            font-size: 1em;
+            border-radius: 1rem;
+            font-weight: 600;
+            background-color: rgb(19, 19, 171);
+            color: #fff;
+            &:hover{
+                background-color:rgb(42, 42, 177);
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+    .sidebar-content{
+        width:100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .sidebar-items{
+            border-radius: 1.5rem;
+            width: 70%;
+            // height: 80px;
+            // margin-bottom: 50px;
+            padding: 10px 30px ;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color: #353535;
+                color: #fff;
+                transition: 0.3s;
+            }
+            h2{
+                font-size: 2rem;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+            i{
+                font-size: 1.4rem;
+                margin-right: 10px;
+            }
+        }
+    }
+    .logout{
+        width: 100%;
+        display: flex;
+        margin: 0 0 20px 20px;
+        align-items: center;
+        button{
+            padding: 10px 20px;
+            background-color: rgb(19, 19, 171);
+            color: #fff;
+            border-radius: 1rem;
+            outline: none;
+            border: none;
+            &:hover{
+                background-color: rgb(39, 39, 192);
+            color: #fff;
+            }
+            i{
+                font-size: 1.4rem;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p{
+            margin-left: 10px;
+            font-size: 2rem;
+            color:#fff;
+            font-weight: 700;
+        }
+    }
+}

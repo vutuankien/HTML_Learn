@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    html{
+    font-size: 62.5%;
+ }
+
+.sidebar{
+    background-color:#18283b;
+    width: 270px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.sidebar .logo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.sidebar .logo h1{                           
+    font-weight: 900;
+    color:antiquewhite;
+    font-size: 50px;
+}
+.sidebar .sb-search{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.sidebar .sb-search .text-input{
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 15px;
+}
+
+.sidebar .sb-content{
+    display: flex;  
+    flex-direction: column;
+    width:100%;
+    height: 60%;
+  
+}
+.sidebar .sb-content .sb-items{
+    display: flex;
+    font-size: 15px;
+    margin:5px;
+    padding: 10px 10px;
+    justify-content: start;
+    background-color: #18283b;
+    border-radius:10px ;
+    height: 60px;
+    color: antiquewhite;
+    align-items: center; 
+
+}
+.sidebar .sb-content .sb-items:hover{
+    color:#18283b;
+    background-color: #9c88ff;
+    cursor: pointer;
+}
+.sidebar .sb-content .sb-items i{
+    font-size: 1.7rem;
+    margin-right: 10px;
+}
+
+.sidebar .logout{
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 5px;
+}
+.sidebar .logout button{
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #18283b;
+}
+.sidebar .logout button:hover{
+    background-color: #9c88ff;
+}
+.sidebar .logout button i{
+    color:antiquewhite
+}
+.sidebar .logout p{
+    font-size: 20px;
+    margin-left: 10px;
+    color: antiquewhite;
+}
