@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+}
+header h1 a{
+    color: #028075;
+    font-size: 50px;
+    font-weight: 700;
+}
+/* nav */
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #028075;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    padding-left: 30px;
+}
+nav a{
+    color:#fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+}
+nav a:last-child{
+    border: none;
+}
+/* Upper news */
+.container{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    margin-top: 30px;
+    gap: 30px;
+}
+.main-content{
+    width: 70%;
+}
+.upper-news{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+.upper-left-new{
+    /* display: flex; */
+    flex-basis: 50%;
+}
+.upper-right-news{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    /* justify-content: space-around; */
+    gap: 40px;
+}
+.upper-news-img{
+    width: 100%;
+}
+.upper-left-new-content{
+    width: 100%;
+    /* word-wrap:; */
+}
+.upper-right-news img{
+    width: 100px;
+}
+.content-title a{
+    color: #000;
+}
+.content-des{
+    font-size: 15px;
+    color: #616161;
+    line-height: 1.5;
+}
+.time{
+    color: #444;
+}
+.right-news-items{
+    display: flex;
+    gap: 20px;
+    /* justify-content: sp; */
+    border-bottom: 1px solid gray;
+}
+.right-news-items img{
+    height: 100px;
+}
+.right-news-items p a{
+    color: #5a5a5a;
+    font-size: 16px;
+    /* font-weight: 600; */
+}
+
+
+/* middle news */
+.middle-news{
+    width: 100%;
+}
+.middle-news-items{
+    display: flex;
+    border:1px solid rgb(217, 216, 216);
+    background-color: rgba(255, 250, 243, 0.874);
+    margin: 20px 0;
+    gap: 20px;
+}
+.middle-news-items img{
+    width: 100px;
+    height: 100%;
+}
+.middle-news-items-content{
+    padding:10px 0 10px 20px;
+}
+.middle-news-items-content-title{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+/* sidebar */
+.sidebar{
+    width: 30%;
+    height: 80vh;
+}
+.opinion{
+    background-color: #f1f1f1;
+    padding:10px 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-top: 5px solid #028075;
+}
+.opinion-title{
+    color: #028075;
+    margin:10px 0 10px 20px;
+}
+.opinion-ask{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.button-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.send,.result{
+    padding: 6px 20px;
+    border:none;
+    outline: none;
+}
+.send{
+    color: #fff;
+    background-color: #ccc;
+}
+.result{
+    color: #fff;
+    background: rgb(171, 32, 32);
+}
+.choice-ratio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.useful-link{
+    width: 100%;
+    border-top: 5px solid #028075;
+    padding: 10px 30px 20px 30px;
+    background-color: #f1f1f1;
+    list-style: georgian;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.useful-link h3{
+    color: #028075;
+    text-transform: uppercase;
+}
+.useful-link li a{
+    color: #000;
+}
+
+/* Special news */
+.special-news{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.economy{
+    flex-basis: 50%;
+}
+.international{
+    flex-basis: 50%;
+}
+.upper-button{
+    padding: 8px 18px;
+    color: #fff;
+    background-color: rgb(215, 56, 56);
+    border: none;
+    display: block;
+    outline: none;
+}
+.economy-content-items,.international-content-items{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    border-top: 2px solid rgb(173, 171, 171) ;
+    gap: 10px;
+}
+.economy-content-items img, .international-content-items img{
+    width: 200px;
+}
+.economy-title a, .international-title a{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.economy-content-menu, .international-content-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: square;
+    padding-left: 30px ;
+}
+.economy-content-menu li a, .international-content-menu li a{
+    color: #444;
+    display: block;
+    border-top: 1px dashed #333;
+}
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: #028075;
+}

@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --background-header: #004370;
+    --text:#000;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding:50px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-title{
+    font-size: 50px;
+    color: #004370;
+    letter-spacing: 4px;
+}
+.header-des{
+    font-size: 12px;
+    color:var(--text);
+    text-transform: uppercase;
+}
+.navbar{
+    background-color: var(--background-header);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    line-height: 30px;
+    padding-left: 40px;
+}
+.navbar-items{
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0 10px;
+}
+.navbar-items:hover{
+    background-color: #4595ca;
+}
+/* end navbar */
+
+/* Container */
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 20px;
+}
+.main-news{
+    width: 70%;
+}
+.main-news-label{
+    font-size: 25px;
+    color: var(--text);
+}
+.upper-news{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.upper-news-left{
+    flex-basis: 50%;
+    background-color: #ECF8FF;
+    padding: 10px 10px 0 20px;
+}
+.upper-news-text{
+    color: gray;
+    font-size: 15px;
+}
+.upper-news-img{
+    flex-basis: 50%;
+    height: 250px;
+}
+.upper-news-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.middle-news{
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.news-card{
+    width: 32%;
+}
+.card-img{
+    width: 100%;
+    height:150px;
+}
+.card-content{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    font-weight: 500;
+}
+/* End Main-Content */
+
+/* Sidebar */
+.sidebar{
+    width: 30%;
+}
+.search-field{
+    width: 100%;
+    background-color: #E6E8EC;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.input-field{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.input-field .input-box{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    padding: 3px 0;
+    background-color: #fff;
+}
+.input-box input{
+    width: 70%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    display: block;
+}
+.search-btn{
+    width: 30%;
+    margin-right: 2px;
+    background-color: #114f78;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: #fff;
+}
+.select-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px auto;
+}
+.select-items{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+/* Calendar */
+.calendar{
+    margin-top: 10px;
+    width: 100%;
+    background-color:#ECF8FF ;
+    border-radius: 10px;
+}
+.calendar-header{
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0 10px 30px;
+}
+.calendar-text{
+    color: var(--text);
+    font-weight: 600;
+}
+.calendar-table{
+    width: 100%;
+}
+.calendar-table-header{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+.time{
+    flex-basis: 20%;
+    text-align: center;
+    color: var(--text);
+    background-color: #85c4e8;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 3px 0;
+}
+.meeting{
+    flex-basis: 80%;
+    text-align: center;
+    color: #fff;
+    background-color: #85c4e8;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 3px 0;
+}
+.calendar-row{
+    display: flex;
+    border-bottom: 1px dashed #ccc;
+}
+.time-item{
+    flex-basis: 20%;
+    text-align: center;
+    color: #333;
+    font-weight:500 ;
+    padding: 10px 0;
+}
+.meeting-item{
+    display: block;
+    flex-basis: 80%;
+    font-weight:500;
+    padding: 10px 0px;
+}
+.calendar-row:last-child{
+    border: none;
+}
+.meeting-item a{
+    border-left: 1px solid #ccc;
+    display: block;
+    font-size: 15px;
+    padding: 0 10px;
+    color: #114f78;
+}
+
+
+/* Product */
+.product{
+    width: 100%;
+    padding: 10px 70px;
+}
+.product-contain{
+    width: 100%;
+    border: 1px solid #4595ca;
+    border-radius: 10px;
+}
+.product-header{
+    width: 100%;
+    padding: 20px 30px;
+    border-bottom: 1px solid #4595ca;
+}
+.product-header-text{
+    font-size: 30px;
+    color: #004370;
+}
+.product-header-text span{
+    color: rgb(9, 186, 9);
+}
+.product-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.product-card{
+    display: flex;
+    flex-basis: 33%;
+}
+.card-name{
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+.new-price{
+    font-size: 25px;
+    color: #ff0000;
+    font-weight: 700;
+}
+.old-price{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+.card-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card-btn-buy{
+    background-color: #EB7A1E;
+    color:#fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.card-img{
+    width: 100%;
+    position: relative;
+}
+.card-img::before {
+    content: "19%";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    padding: 14px 5px;
+    border-radius: 50%;
+}
+/* Major */
+.major{
+    margin: 40px 0;
+    width: 100%;
+    padding: 10px 70px;
+}
+.major-contain{
+    width: 100%;
+}
+.major-cards{
+    display: flex;
+    gap: 10px;
+}
+.major-card{
+    flex-basis: 33%;
+    border: 1px solid #ccc;
+}
+.major-card-label{
+    font-size: 25px;
+    padding:10px 30px;
+    font-weight: 600;
+}
+.major-card img{
+    width: 100%;
+    height: 250px;
+}
+.card-list{
+    list-style: none;
+    padding: 10px 20px;
+}
+.card-list li{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.card-list-items{
+    color: #333;
+    font-size: 17px;
+}
+li:first-of-type .card-list-items{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+}
+li:last-child{
+    border: none;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #114f78;
+}
